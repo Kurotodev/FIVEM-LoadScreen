@@ -4,6 +4,7 @@ game 'gta5'
 
 loadscreen_manual_shutdown "yes"
 
+author 'KuroDev'
 
 version '1.0.1'
 
