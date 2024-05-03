@@ -4,7 +4,6 @@ game 'gta5'
 
 loadscreen_manual_shutdown "yes"
 
-author 'KuroDev'
 
 version '1.0.1'
 
@@ -15,6 +14,7 @@ files {
 	'index.html',
     'css/style.css',
     'js/app.js',
+    'video.mp4',
     'js/jquery.min.js',
     'js/jquery.easings.min.js'
 }

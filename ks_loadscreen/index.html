@@ -6,20 +6,63 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1c4b4851e0.js" crossorigin="anonymous"></script>
 
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+
+
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.min.css" integrity="sha512-Mvnc3gzZhD8rZtNMHJkotZpdfvAHunpqankLPnj3hXpphETXpxbfr4+oNMOzF179JYu8B8/EqruGdpsH5fNYww==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/theme.min.css" integrity="sha512-Q2qvb9omuMvaoo6ofA3xaiD3b1aA7BlQGYxEOTij6i4HRsDNB7K2uEUHbbymUqqFDduToacMzKNYYVRwe4H2yw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js" integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+  <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin=""/>
+
 </head>
 
 <body style="overflow: hidden;">
     
 
     <div class="bgtrueblack show">
-        <video id="videoooo" >
-            <source src="TULINK DE VIDEO" type="video/mp4">
+        <video id="videoooo" autoplay >
+            <source src="video.mp4" type="video/mp4">
           </video>
     </div>    
      
      <div class="loading">
+        <div class="d-flex align-items-center vol-container">
+            <span class="volume-icon me-3" style="font-size:1.5vh">
+                <i class="fa-solid fa-volume-high"></i>
+            </span>
+            <div style="position:relative;width:max-content;">
+               
+                <progress value="90" max="100" min="0" id="progress-volumen">
+                </progress>
+                <input type="range" id="inp-musicvolume" oninput="sliderselector(this)" value="80" min="0" max="100" style="opacity:0;width: 100%;transform: translate(-1vh, -1vh);height: .7tuvh; position:absolute;top:0;left:0;"></input>
+            </div>
+        </div>
         <div class="ilustracion"></div>
         <div class="bottom">
             <div class="flex-bottom">
@@ -37,11 +80,14 @@
             <div class="progress">
                 <div class="barra"></div>
             </div>
+            <div class="teclasbackground">
+                <div class="e"> <img src="https://cdn-icons-png.flaticon.com/512/60/60972.png"> BAJAR VOLUMEN - BAJAR VOLUMEN <img style="transform: rotate(180deg);" src="https://cdn-icons-png.flaticon.com/512/60/60972.png"></div>
+            </div>
         </div>
-        <div class="logo">
-            <img src="https://forum.cfx.re/uploads/default/original/4X/3/3/c/33c8a46bd7dc62a1f44a6b492f6d854ae6e97822.png">
-        </div>
-        <div class="sombra"></div>
+        <!-- <div class="logo">
+            <img src="https://cdn.discordapp.com/attachments/1234328705027932200/1235334222382633000/TESTLOGO.png?ex=6633fe26&is=6632aca6&hm=4e1896d8f73bf468c4550da763a23ed26ee5f1d072169ef9fa56c0bee9a6c4f1&">
+        </div> -->
+    
      </div>
    
 

@@ -8,4 +8,7 @@ RegisterNetEvent("cerrar:loadscreen", function()
 
 	ShutdownLoadingScreen()
 	ShutdownLoadingScreenNui()
+	SendNUIMessage({
+		action = "terminar"
+	})
 end)
